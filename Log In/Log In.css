@@ -1,0 +1,113 @@
+:root {
+    --blue: #0082c8;
+    --white: rgb(216, 203, 203);
+    --yellow: #FFE000;
+    --dark: #333;
+    --light-dark: rgba(0, 0, 0, 0.3);
+    /* For better overlay effect */
+    --nav_bg: #3A6073;
+    --black: #232526;
+    --card_gray: #626b77;
+    --card_light_gray: #a2a1a5;
+    --login-black:#474747;
+  }
+  ::selection{
+    color: var(--yellow);
+    background-color: var(--blue);
+  }
+
+.img{
+    height: 100%; 
+}
+.LogInImg {
+    width: 100%;        /* Ensures the image width is responsive to its container */
+    height: auto;      /* Maintains the aspect ratio of the image */
+    max-width: 100%;   /* Prevents the image from exceeding the width of its container */
+}
+
+
+.icons{
+    float: left;
+    display: grid;
+    flex: 2;
+    flex-direction: row;
+    gap: 12px;
+    margin: 12px;
+    color: var(--card_light_gray);
+    font-size: 28px;
+}
+
+.card {
+    background-color: var(--login-black);
+    color: var(--white);
+}
+
+.form-control {
+    border-color: var(--blue);
+    color: var(--black);
+}
+
+.form-control:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 5px rgba(255, 224, 0, 0.5);
+}
+
+.btn-dark {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+}
+
+.btn-dark:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+.form-label {
+    color: var(--white);
+}
+
+.small.text-muted {
+    color: var(--card_light_gray) !important;
+}
+
+h5 {
+    color: var(--card_light_gray);
+}
+
+.vh-100 {
+    background-color: var(--dark);
+}
+
+.form{
+    padding: 32px 32px;
+}
+
+/* Using MDB classes with focus state */
+.form-outline .form-control:focus {
+    border-color: var(--white) !important; /* Customize the focus border color */
+    box-shadow: 0 0 3px var(--blue) !important; /* Add a custom shadow */
+    color: var(--black);
+  }
+  
+  /* Customize label color when focused */
+  .form-outline .form-label {
+    color: var(--white) !important;
+  }
+
+
+
+  @media screen and (max-width: 500px) {
+    .icons{
+        display: none;
+    }
+  }
+
+
+  
+
+
+
+
+

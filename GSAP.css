@@ -1,0 +1,18 @@
+.box{
+    height: 220px;
+    width: 220px;
+    background-color: red;
+    display: grid;
+}
+
+section{
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; 
+    height: 80vh;
+}
+
+.text{
+    margin-bottom: 40%;
+    text-align: center;
+}
